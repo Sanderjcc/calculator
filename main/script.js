@@ -36,7 +36,7 @@ function add(){
     let sum = Number(num01.value) + Number(num02.value)
 
     if (validation()){
-       outputText.innerText += `${num01.value} + ${num02.value} = ${sum}`
+       outputText.innerText += `${num01.value} + ${num02.value} = ${sum.toFixed(2)}`
         outputArea.appendChild(outputText)
 
         num01.value = ''
@@ -57,7 +57,7 @@ function sub(){
     difference = Number(num01.value) - Number(num02.value)
     
     if (validation()){
-        outputText.innerText = `${num01.value} - ${num02.value} = ${difference}`
+        outputText.innerText = `${num01.value} - ${num02.value} = ${difference.toFixed(2)}`
         outputArea.appendChild(outputText)
 
         num01.value = ''
@@ -77,7 +77,7 @@ function division(){
     quotient = Number(num01.value) / Number(num02.value)
 
     if (validation()){
-        outputText.innerText = `${num01.value} / ${num02.value} = ${quotient}`
+        outputText.innerText = `${num01.value} / ${num02.value} = ${quotient.toFixed(2)}`
         outputArea.appendChild(outputText)
 
         num01.value = ''
@@ -97,7 +97,7 @@ function mult(){
     product = Number(num01.value) * Number(num02.value)
 
     if (validation()){
-        outputText.innerText = `${num01.value} x ${num02.value} = ${product}`
+        outputText.innerText = `${num01.value} x ${num02.value} = ${product.toFixed(2)}`
         outputArea.appendChild(outputText)
 
         num01.value = ''
